@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver un Hôtel - Bobo-Dioulasso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-zone">
+            <img src="images/logo.png" alt="Logo Bobo" class="logo">
+            <h1>Bobo-Dioulasso</h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="patrimoine.html">Patrimoine</a></li>
+                <li><a href="hotel.html" class="active">Réservation d'hôtel</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-reservation">
+            <h2>Planifiez votre séjour à Sya</h2>
+            <p>Remplissez ce formulaire pour simuler une demande de réservation dans les plus grands complexes hôteliers de Bobo-Dioulasso.</p>
+            
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="nom">Nom complet :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex: Ahmed Ouattara" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: Ahmed@example.com" required>
+                </div>
+<div class="form-group">
+                    <label for="hotel-choix">Choisissez votre hôtel :</label>
+                    <select id="hotel-choix" name="hotel_choix" required>
+                        <option value="">-- Sélectionnez un établissement --</option>
+                        <option value="sissiman">Hôtel Sissiman (4 Étoiles)</option>
+                        <option value="auberge">L'Auberge de Bobo</option>
+                        <option value="ran">Hôtel de la RAN</option>
+                        <option value="sya">Hôtel Sya</option>
+                    </select>
+                </div> <div class="form-row">
+                    <div class="form-group half">
+                        <label for="arrivee">Date d'arrivée :</label>
+                        <input type="date" id="arrivee" name="date_arrivee" required>
+                    </div>
+                    
+                    <div class="form-group half">
+                        <label for="depart">Date de départ :</label>
+                        <input type="date" id="depart" name="date_depart" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="chambres">Type de chambre :</label>
+                    <select id="chambres" name="type_chambre">
+                        <option value="standard"> Chambre Standard - Single(1 personne - Lit simple)</option>
+                        <option value="double"> Chambre Double (2 personnes - Grand lit)</option>
+                        <option value="suite">Suite Prestige VIP(Salon et Grand confort)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Demandes particulières (repas traditionnels, visites de monuments guidées, transfert de l'aéroport...) :</label>
+                    <textarea id="message" rows="4" placeholder="Ex: Je souhaite réserver un guide local pour visiter la forêt sacrée de Dafra et la Mosquée de Dioulassoba..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirmer ma demande</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projet Web Bobo-Dioulasso - Présenté par le Groupe de 4x4 d'Étudiants de Première Année</p>
+    </footer>
+
+</body>
+</html>

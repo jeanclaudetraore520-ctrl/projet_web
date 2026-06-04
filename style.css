@@ -1,0 +1,417 @@
+*{
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #fcfaf2;
+color: #333;
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+/*css pour l'entete et la navigation*/
+
+header {
+background-color: #2e5a44;
+color: white;
+padding: 30px 15px 30px 15px;
+text-align: center;
+}
+
+.logo-zone {
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+.logo {
+width: 110px;
+height: 110px;
+border-radius: 50%;
+object-fit: cover;border: 3px solid #d27d2d;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+transition: transform 0.3s ease;
+}
+
+.logo:hover {
+transform: scale(1.05);
+}
+.logo-zone h1{
+    margin:5px 0 15px 0;
+    font-size: 2.2rem;
+font-weight: 700;
+letter-spacing: 1px;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+nav ul {
+list-style-type: none;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background-color: #1e3d2f;
+width: 100%;
+padding: 0;
+}
+
+nav li{
+margin: 0;
+}
+
+nav a {
+display: block;
+color: white;
+text-decoration: none;
+padding: 15px 25px;
+font-weight: bold;
+font-size: 1rem;
+transition: background-color 0.3s,color 0.3s;
+text-align: center;
+}
+
+nav a:hover,nav a.active {
+background-color: #d27d2d;
+}
+
+/*css pour le contenu principale*/
+main {
+width: 90%;
+max-width: 1000px;
+margin: 30px auto;
+padding: 30px;
+background-color: white;
+border-radius:12px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+min-height: 400px;
+}
+
+main h2 {
+color: #2e5a44;
+border-bottom: 3px solid #d27d2d;
+padding-bottom: 12px;
+margin-bottom: 25px;
+font-size: 1.8rem;
+text-transform: capitalize;
+}
+
+main p {
+margin-bottom: 20px;
+font-size: 1.05rem;
+color: #444;
+}
+main ul {
+margin-bottom: 20px;
+padding-left: 20px;
+}
+
+main li {
+margin-bottom: 10px;
+}
+/*css pour la partie hotel formulaire de reservation*/
+.form-reservation {
+max-width: 600px;
+margin: 0 auto;
+}
+.form-group {
+margin-bottom: 22px;
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+.form-group label {
+font-weight: bold;
+margin-bottom: 8px;
+color: #2e5a44;
+font-size: 0.95rem;
+}
+
+.form-group input,.form-group select {
+width: 100%;
+padding: 12px;
+border: 1.5px solid #ccc;
+border-radius: 6px;
+font-size: 1rem;
+font-family: inherit;
+background-color: #fff;
+transition: border-color 0.3s,box-shadow 0.3s;
+}
+
+.form-group input:focus,.form-group select:focus {
+border-color: #d27d2d;
+outline: none;
+box-shadow: 0 0 8px rgba(210,125,45,0.25);
+}
+
+.form-row {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+}
+
+.half {
+flex: 1;
+}
+
+.btn-submit {
+background-color: #d27d2d;
+color: white;
+border: none;
+padding: 14px 20px;
+font-size: 1.1em;
+font-weight: bold;
+border-radius: 6px;
+cursor: pointer;
+width: 100%;
+transition: background-color 0.3s, transform.1s;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-submit:hover {
+    background-color: #2e5a44;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+/*css pour poutrmoine*/
+
+.grille-monuments {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+gap: 25px;
+padding: 10px 0;
+}
+
+.monument-card {
+position: relative;
+overflow: visible;
+border-radius: 12px;
+height: auto;
+box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+background-color: #fff;
+padding: 15px;
+}
+
+.monument-card img { 
+width: 100%;
+height: 220px;
+object-fit: cover;
+border-radius: 10px;
+transition: transform 0.5s ease;
+}
+
+.monument-card:hover img {
+transform: scale(1.05);
+}
+
+
+.detail-monument {
+max-width: 800px;
+margin: 0;
+text-align: left;
+}
+
+.img-monument{
+width: 100%;
+max-height: 750px;
+height: 380px;
+object-fit: cover;
+object-position : top center; 
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+margin : 15px 0 25px 0;
+}
+
+
+.image-principale {
+width: 100%;
+max-height: 400px;
+overflow: hidden;
+border-radius: 12px;
+margin-bottom: 25px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.image-principale img {
+width: 100%;
+max-height: 450px;
+object-fit: cover;
+border-radius: 12px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.histoire h3 {
+color: #2e5a44;
+border-bottom: 2px solid #d27d2d;
+display: inline-block;
+padding-bottom: 5px;
+margin-top: 25px;
+margin-bottom: 12px;
+font-size: 1.3rem;
+}
+/*css pour les boutons dans la patrimoine*/
+
+.btn-voir {
+display: inline-block;
+background: #d27d2d;
+color: white;
+padding: 10px 18px;
+border-radius: 6px;
+font-weight: bold;
+text-decoration: none;
+margin-top: 12px;
+transition: background-color 0.3s;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-voir:hover{
+background-color: #2e5a44;
+transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.btn-retour {
+  display: inline-block;
+  background: #d27d2d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.btn-retour:hover {
+  background-color: #2e5a44;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.btn-retour:active {
+  transform: scale(0.98);
+}
+
+
+
+/*css pour pieds de page*/
+
+footer {
+background-color: #ccc;
+text-align: center;
+padding: 20px 10px;
+font-size: 0.9em;
+width: 100%;
+margin-top: 40px;
+}
+/*css pour rendre la page responsive*/
+
+@media(max-width: 768px) {
+main{
+width: 95%;
+padding: 20px;
+margin: 20px auto;
+}
+.logo { 
+width: 100px;
+height: 100px;
+}
+.logo-zone h1 {
+font-size: 1.9rem;
+}
+nav a {
+padding: 12px 18px;
+font-size: 0.95rem;
+}
+.img-monument {
+    height: 280px;
+}
+}
+
+@media(max-width: 480px){
+header {
+padding: 20px 10px 20px 10px;
+}
+.logo {
+width: 85px;
+height: 85px;
+}
+.logo-zone h1 {
+    font-size: 1.6rem;
+}
+nav ul {
+display: flex;
+grid-template-columns: 1fr 1fr;
+}
+nav a {
+    padding: 15px;
+margin: 10px auto;
+border-radius: 0;
+}
+main h2 {
+    font-size: 1.4rem;
+}
+.form-row {
+    flex-direction: column;
+    gap: 0;
+}
+.image-principale {
+height: 250px;
+}
+.img-monument {
+    height: 200px;
+}
+}
+
+
+/*css pour la galerie photo*/
+
+.galerie-grid {
+    display: grid;
+grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+padding:20px 0;
+}
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.12);
+    background-color: #fff;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.photo-item img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+border-radius: 12px;
+transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.photo-item:hover img {
+    transform: scale(1.08);
+}
+
+.legende {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+background: rgba(46,90,68,0.9);
+color: white;
+padding: 12px;
+font-weight: bold;
+text-align: center;
+font-size: 0.95rem;
+}
